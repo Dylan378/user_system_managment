@@ -5,9 +5,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'home'])->name('home');
+Route::get('/', [HomeController::class, 'dashboard'])->name('home');
 
-Route::get('dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
+Route::get('dashboard', [HomeController::class, 'home'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
 

@@ -9,6 +9,7 @@
         <table class="table-auto w-fit">
             <thead>
                 <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                    <th class="py-3 px-6 text-left">Photo</th>
                     <th class="py-3 px-6 text-left">Name</th>
                     <th class="py-3 px-6 text-left">Email</th>
                     <th class="py-3 px-6 text-left">Birth date</th>
@@ -20,6 +21,9 @@
             <tbody class="text-gray-600 text-sm font-light">
                 @foreach ($users as $user)
                     <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-center whitespace-nowrap">
+                            <img class="h-10 w-10 rounded-full object-cover object-center" src="{{ userPhotoPath($user->photo_filename) }}" alt="">
+                        </td>
                         <td class="py-3 px-6 text-left whitespace-nowrap">
                             <a href="{{ route('users.show', ['user' => $user]) }}" class="hover:underline font-medium">{{ $user->name }}</a>
                         </td>

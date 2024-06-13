@@ -19,7 +19,7 @@
             <a href="{{ route('dashboard') }}" class="flex hover:underline">
                 <div class="flex items-center hover:underline">
                     <p>
-                        Dashboard
+                        Users
                     </p>
                         
                     <i class="pl-2 fa-solid fa-table-columns fa-xl"></i>
