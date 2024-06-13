@@ -1,4 +1,4 @@
-This is a User Management System:
+### User Management System:
 This system uses vue components for authentication and profile views, as well as blade with tailwind for a better a clean design.
 
 ### Setup:
