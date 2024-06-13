@@ -6,7 +6,6 @@ use App\Http\Requests\UsersStoreRequest;
 use App\Models\User;
 use App\Traits\GeneratesPhotoHashes;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Intervention\Image\Facades\Image;
 

@@ -36,16 +36,6 @@
             <x-label for="password" class="block text-gray-700 text-sm font-bold mb-2">Access password for this user</x-label>
             <x-input id="password" name="password" placeholder="*********" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></x-input>
         </div>
-
-        {{-- <div class="mb-4">
-            <x-label for="category_id" class="block text-gray-700 text-sm font-bold mb-2">Category</x-label>
-            <select id="category_id" name="category_id" class="focus:border-0 focus:ring-gray-300 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 @error('category_id') @enderror">
-                
-                @foreach($categories as $category)
-                    <option value="{{ $category->id }}" {{ $category->id == old('category_id') ? 'selected' : '' }}>{{ $category->name }}</option>
-                @endforeach
-            </select>
-        </div> --}}
         
         <div class="mb-4">
             <x-label for="user_photo" class="block text-gray-700 text-sm font-bold mb-2">photo</x-label>
